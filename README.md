@@ -30,4 +30,6 @@ To achieve a responsive design with flexbox, the following was implemented:
 <br>
 
 ## Reflection
+To be written in the near future.
+
 @September 2023
