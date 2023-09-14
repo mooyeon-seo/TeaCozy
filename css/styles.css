@@ -9,14 +9,22 @@
 header#header {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid seashell;
+    position: fixed;
 }
 
 h1#logo {
-    font-size: 10px;
-    line-height: 50px;
+    font-size: 50px;
+    line-height: 69px;
 }
 
-nav#navigation {
+nav#navigation ul {
     display: flex;
-    justify-content: space-between;
+}
+
+nav#navigation ul a {
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 10px;
 }
