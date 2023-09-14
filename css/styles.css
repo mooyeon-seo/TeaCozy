@@ -1,0 +1,22 @@
+* {
+    font-family: Helvetica, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;   
+}
+
+header#header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1#logo {
+    font-size: 10px;
+    line-height: 50px;
+}
+
+nav#navigation {
+    display: flex;
+    justify-content: space-between;
+}
