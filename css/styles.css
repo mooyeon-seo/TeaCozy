@@ -6,25 +6,9 @@
     font-weight: bold;
 }
 
-section#teaOfTheMonth header#header {
-    position: fixed;
-    top: 5px;
+header#header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid seashell;
-    width: 100%;
-    padding: 0px 10px;
-    box-sizing: border-box;
-}
-
-section#teaOfTheMonth h2 {
-    font-size: 2rem;
-    margin: 10px 0px;
-}
-
-section#teaOfTheMonth h4 {
-    font-size: 1.6rem;
-    margin: 10px 0px;
 }
 
 img#logo {
@@ -66,6 +50,7 @@ section#mission {
     flex-direction: column;
     gap: 30px;
 }
+
 section#mission div {
     display: flex;
     flex-direction: column;
@@ -85,24 +70,54 @@ section#mission div h4 {
     font-size: 1.8rem;
 }
 
+section#teaOfTheMonth header#header {
+    /* position: fixed;
+    top: 5px; */
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid seashell;
+    width: 100%;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+section#teaOfTheMonth h2 {
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+
+section#teaOfTheMonth h4 {
+    font-size: 1.6rem;
+    margin: 10px 0px;
+}
+
 section#teaOfTheMonth {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-basis: 100px;
-	flex-grow: 0;
-	flex-shrink: 0;
+    flex: 0 1 auto;
     width: 1000px;
+    height: 700px;
 }
 
 div#listOfTeas{
-    flex: 0 1000px;
+    flex: 0 1 auto;
+    width: 1000px;
+    height: 500px;
 	display: flex;
+    
     flex-wrap: wrap;    
     justify-content: center;
     align-content: center;
+    align-items: center;
     gap: 15px;
+}
+
+div.teaItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 div.teaItem img {
@@ -113,4 +128,64 @@ div.teaItem img {
 
 div.teaItem h3 {
     font-size: 1.3rem;
+}
+
+#locationSection {
+    width: 80vw;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-image: url("/assets/img-locations-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#locationSection h3 {
+    background-color: transparent;
+    font-size: 2rem;
+}
+
+div#locations {    
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: baseline;
+    background-color: transparent;
+    gap: 40px;
+}
+
+div#locations div.location {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    gap: 40px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+footer p {
+    align-self: flex-start;
+    margin-left: 20px;
 }
