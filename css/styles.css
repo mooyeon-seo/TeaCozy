@@ -3,19 +3,22 @@
     font-size: 22px;
     color: seashell;
     background-color: black;
-    opacity: 0.9;   
+    opacity: 0.9;
 }
 
 header#header {
+    position: fixed;
+    top: 5px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid seashell;
-    position: fixed;
+    width: 100%;
+    padding: 0px 10px;
+    box-sizing: border-box;
 }
 
-h1#logo {
-    font-size: 50px;
-    line-height: 69px;
+img#logo {
+    height: 50px;
 }
 
 nav#navigation ul {
@@ -27,4 +30,43 @@ nav#navigation ul a {
     font-weight: bold;
     text-decoration: underline;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    width: 80vw;
+    height: 80vh;
+    background-image: url("/assets/img-mission-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+section#mission div.missionstatement {
+    width: 100%;
+}
+
+section#teaOfTheMonth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#teaOfTheMonth div.listOfTeas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
